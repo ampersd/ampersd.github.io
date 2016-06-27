@@ -1,0 +1,337 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DevOps: Релизы каждый день</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:2368/assets/css/screen.css?v=6494356a30">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Blog about Everything">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="DevOps: Релизы каждый день">
+    <meta property="og:description" content="Это конспект события: Релизы каждый день  Дата: 18 августа 2015  Место: Digital Port, Пермь  Спикер: Михаил Трошев, руководитель службы поисковых интерфейсов Яндекса (визитка http://mishanga.pro/, описание https://events.yandex.ru/lib/people/392/)  Полезность (лично для меня): 6/10 О спикере: Михаил живет в Москве 10 лет. Поначалу работал">
+    <meta property="og:url" content="http://localhost:2368/releases-every-day/">
+    <meta property="article:published_time" content="2015-08-19T15:51:24.000Z">
+    <meta property="article:modified_time" content="2016-06-27T12:14:49.464Z">
+    <meta property="article:tag" content="Programming">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DevOps: Релизы каждый день">
+    <meta name="twitter:description" content="Это конспект события: Релизы каждый день  Дата: 18 августа 2015  Место: Digital Port, Пермь  Спикер: Михаил Трошев, руководитель службы поисковых интерфейсов Яндекса (визитка http://mishanga.pro/, описание https://events.yandex.ru/lib/people/392/)  Полезность (лично для меня): 6/10 О спикере: Михаил живет в Москве 10 лет. Поначалу работал">
+    <meta name="twitter:url" content="http://localhost:2368/releases-every-day/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Антон Николаевич Корепанов">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Programming">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Blog about Everything",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Антон Николаевич Корепанов",
+        "image": "//www.gravatar.com/avatar/f830fa649818e93c77b0749693ec7891?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/anton/",
+        "sameAs": []
+    },
+    "headline": "DevOps: Релизы каждый день",
+    "url": "http://localhost:2368/releases-every-day/",
+    "datePublished": "2015-08-19T15:51:24.000Z",
+    "dateModified": "2016-06-27T12:14:49.464Z",
+    "keywords": "Programming",
+    "description": "Это конспект события: Релизы каждый день  Дата: 18 августа 2015  Место: Digital Port, Пермь  Спикер: Михаил Трошев, руководитель службы поисковых интерфейсов Яндекса (визитка http://mishanga.pro/, описание https://events.yandex.ru/lib/people/392/)  Полезность (лично для меня): 6/10 О спикере: Михаил живет в Москве 10 лет. Поначалу работал"
+}
+    </script>
+
+    <script type="text/javascript" src="http://localhost:2368/shared/ghost-url.js?v=6494356a30"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "46e4e9e8050b"
+});
+</script>
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="Blog about Everything" href="../rss/index.html">
+</head>
+<body class="post-template tag-programming nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+            <li class="nav-" role="presentation"><a href="../tag/books/">Книги</a></li>
+            <li class="nav-programming" role="presentation"><a href="../tag/programming/">Programming</a></li>
+            <li class="nav-" role="presentation"><a href="../tag/design/">Дизайн</a></li>
+            <li class="nav-" role="presentation"><a href="../tag/thoughts/">Мысли</a></li>
+            <li class="nav-" role="presentation"><a href="../tag/business/">Бизнес</a></li>
+            <li class="nav-" role="presentation"><a href="../tag/other/">Другое</a></li>
+            <li class="nav--" role="presentation"><a href="http://localhost:2368/tag/about-me/">Обо мне</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-programming">
+
+        <header class="post-header">
+            <h1 class="post-title">DevOps: Релизы каждый день</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-08-19">19 August 2015</time>  on <a href="../tag/programming/">Programming</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p><a href="http://res.cloudinary.com/ampersd/image/upload/v1467022680/365x365_rw0ycb.jpg"><img src="http://res.cloudinary.com/ampersd/image/upload/v1467022680/365x365_rw0ycb.jpg" alt="365x365" title=""></a></p>
+
+<p><strong>Это конспект события</strong>: Релизы каждый день <br>
+<strong>Дата</strong>: 18 августа 2015 <br>
+<strong>Место</strong>: Digital Port, Пермь <br>
+<strong>Спикер</strong>: Михаил Трошев, руководитель службы поисковых интерфейсов Яндекса (визитка <a href="http://mishanga.pro/">http://mishanga.pro/</a>, описание <a href="https://events.yandex.ru/lib/people/392/">https://events.yandex.ru/lib/people/392/</a>) <br>
+<strong>Полезность (лично для меня)</strong>: 6/10</p>
+
+<p><strong>О спикере</strong>: Михаил живет в Москве 10 лет. Поначалу работал в студии Артемия Лебедева. 3 года назад перешел в Яндекс. Он и его команда ответственны за внешний вид страницы поисковой выдачи. Т.е. за святая святых.</p>
+
+<h2 id="3">3 года назад</h2>
+
+<ul>
+<li>Поначалу фронтенд релизился bash-скриптами, которые писали перлщики</li>
+<li><strong>Релиз раз в четыре месяца (настолько долгим был процесс)</strong></li>
+<li>SVN (централизованная система контроля версий)</li>
+</ul>
+
+<p><strong>Что хотели:</strong></p>
+
+<ul>
+<li>Быстро реагировать на события</li>
+<li>Быстро выкладывать клевые фичи</li>
+<li>Проводить много экспериментов (выкатывать сырой дизайн, улучшать потом)</li>
+<li>Делать фичи, а не чинить баги</li>
+</ul>
+
+<p><strong>Размышления:</strong></p>
+
+<ul>
+<li>SVN — это плохо</li>
+<li>Ручная подготовка беты для тестирования</li>
+<li>Никаких модульных тестов</li>
+<li>Медленное тестирование: - Ручное тестирование</li>
+<li>Ожидание беты для тестирования</li>
+<li>Ожидание разработчика</li>
+<li>Плохое описание задач</li>
+<li>Тестирование в режиме пиковых нагрузок</li>
+</ul>
+
+<p>Команда тестирования поиска Яндекса сидит в Минске, что несколько затрудняет коммуникацию.</p>
+
+<p>Медленная подготовка релиза:</p>
+
+<ul>
+<li>Много ручных действий</li>
+<li>Человеческий фактор</li>
+<li>Сакральные знания, <a href="https://www.wikiwand.com/ru/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80_%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81%D0%B0">автобусное число</a> (сколько разработчиков должен сбить автобус, чтобы проект стало невозможно релизить). В случае с командой того времени, это число равнялось одному, т.к. один человек собирал релизы вручную.</li>
+</ul>
+
+<h2 id="">Тернистый путь к улучшениям</h2>
+
+<ul>
+<li>Git — распределенная система контроля версий</li>
+<li>Gitflow — рекомендуемый workflow git’a, слегка модифицировали его</li>
+<li>Инстанс github enterprise для яндекса (можно код ревью осуществлять)</li>
+</ul>
+
+<p>Gitflow* (отличие от стандартного):</p>
+
+<ul>
+<li>Прямых коммитов в dev не делают, только merge</li>
+<li>Поэтому можно, если фича плохая — сразу ее отцепить</li>
+<li>Вообще отказались от master ветки</li>
+</ul>
+
+<p>Для CI используют teamcity <br>
+ При pull request’e сначала код проверяют другие разработчики, затем запускаются различные легковесные узконаправленные тесты (не все возможные, а только те, которые касаются конкретных измененных файлов), также используют <a href="https://ru.bem.info/tools/testing/gemini/">Gemini</a> — open-source инструмент сравнения с идеальным скриншотом.</p>
+
+<p><strong>Релиз стал сходиться 2 недели</strong> <br>
+ Почему так медленно? <br>
+ Очень долго шло <a href="https://www.wikiwand.com/ru/%D0%A0%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">регрессионное тестирование</a></p>
+
+<p><strong>Ввели правило</strong>:</p>
+
+<p>Если нашли баг, и до вечера его не исправили — отрывают мердж полностью — делают реверт-коммит (т.е. Который отменяет все изменения) <br>
+ Если дежурный не смог оторвать этот мердж, это делает сам разработчик.</p>
+
+<p><strong>Не надо чинить в авральном режиме, надо делать это спокойно</strong></p>
+
+<p><strong>Самое главное правило</strong> <br>
+ Релизные задачи имеют наивысший приоритет</p>
+
+<p>Т.е. если разработчик занимается какой-то новой фичей, а ему прилетает баг по старой, которая нужна для релиза — он откладывает новую фичу в сторону и берется чинить баг.</p>
+
+<h2 id="">Автоматизация релиза</h2>
+
+<p><strong>Попытка 1.</strong> Использовать hubot (робота github’a)  — не удовлетворял требованиям. <br>
+<strong>Попытка 2.</strong> Хотели поначалу склепать свою систему с кодовым именем Hodor</p>
+
+<ul>
+<li>прототип интерфейса</li>
+<li>требования по автоматизации</li>
+<li>скрипты</li>
+</ul>
+
+<p>Вердикт: Слишком сложно <br>
+ Ничего кроме скриптов на самом деле не нужно</p>
+
+<p>Тем более что у них уже был teamcity</p>
+
+<p>Решили проанализировать какие элементарные шаги проводит релиз-инженер и автоматизировать каждый отдельный шаг через скрипт.</p>
+
+<p><strong>Действия релиз-инженера:</strong></p>
+
+<ul>
+<li>Отвести ветку с релизом</li>
+<li>Добавить задачу а релиз</li>
+<li>Оторвать задачу из релиза</li>
+<li>Собрать релиза пакеты</li>
+<li>Отправить в текстовый кластер</li>
+<li>Отправить в боевой кластер</li>
+</ul>
+
+<p>Отрывание задачи из релиза решили не автоматизировать <br>
+ Слишком трудозатратна автоматизация</p>
+
+<p>На остальные действия — свои скрипты по-каждому.</p>
+
+<h2 id="">Выводы</h2>
+
+<ul>
+<li>Делим релиз на атомарные действия</li>
+<li>Делаем на каждое действие скрипт</li>
+<li>Не пляшем от интерфейса или готовой системы. Т.е. не от человека, а от процесса. Не начинать рисовать кнопочки веб-приложения, а просто сделать сами скрипты.</li>
+</ul>
+
+<p>Эти скрипты крутятся в teamcity, но даже если она сломается, можно руками запустить эти шаги последовательно — отказоустойчивость системы.</p>
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//ampersd.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/anton/" style="background-image: url(http://www.gravatar.com/avatar/f830fa649818e93c77b0749693ec7891?s&amp;)"><span class="hidden">Антон Николаевич Корепанов's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/anton/">Антон Николаевич Корепанов</a></h4>
+
+                    <p>Read <a href="../author/anton/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=DevOps%3A%20%D0%A0%D0%B5%D0%BB%D0%B8%D0%B7%D1%8B%20%D0%BA%D0%B0%D0%B6%D0%B4%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C&amp;url=http://localhost:2368/releases-every-day/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/releases-every-day/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/releases-every-day/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../how-to-distinguish-truth-from-falsehood/">
+        <section class="post">
+            <h2>Как отличить правду от лжи</h2>
+            <p>Из книги «Реальный Репортер»   Прежде чем отвечать на этот вопрос, я бы хотел обратить внимание на одно важное свойство…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../vasily-urievsky/">
+        <section class="post">
+            <h2>Василий Уриевский из Саратова</h2>
+            <p>Ездил я на Грушинский фестиваль в начале июля 2015.   Больше всех из выступающих мне запомнился Василий Уриевский (с коллективом)…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">Blog about Everything</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="http://localhost:2368/assets/js/jquery.fitvids.js?v=6494356a30"></script>
+    <script type="text/javascript" src="http://localhost:2368/assets/js/index.js?v=6494356a30"></script>
+
+</body>
