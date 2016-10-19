@@ -6,7 +6,7 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 38,
+            "value": 10,
             "density": {
                 "enable": false,
                 "value_area": 561.194221302933
@@ -16,7 +16,7 @@ particlesJS("particles-js", {
             "value": "#ffffff"
         },
         "shape": {
-            "type": "circle",
+            "type": "image",
             "stroke": {
                 "width": 4,
                 "color": "#000000"
@@ -25,9 +25,9 @@ particlesJS("particles-js", {
                 "nb_sides": 8
             },
             "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
+              "src": "assets/cloud.png",
+              "width": 150,
+              "height": 100
             }
         },
         "opacity": {
@@ -59,7 +59,7 @@ particlesJS("particles-js", {
         },
         "move": {
             "enable": true,
-            "speed": 6,
+            "speed": 1,
             "direction": "left",
             "random": false,
             "straight": false,
@@ -114,8 +114,12 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
-document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
-document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
+// if hide without timeout - image doesn't have time to draw
+setTimeout(function(){
+  document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
+  document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
+},
+20);
 // #32a6d7;
 
 function showMagic()
