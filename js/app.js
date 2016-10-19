@@ -119,7 +119,7 @@ setTimeout(function(){
   document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
   document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
 },
-20);
+30);
 // #32a6d7;
 
 function showMagic()
