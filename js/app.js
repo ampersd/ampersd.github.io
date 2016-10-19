@@ -117,3 +117,15 @@ particlesJS("particles-js", {
 document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
 document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
 // #32a6d7;
+
+function showMagic()
+{
+  if (document.getElementById("switcher").checked) 
+  {
+    document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'block'; 
+    document.getElementById('particles-js').style.backgroundColor = "#32a6d7"; 
+  } else {
+    document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
+    document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
+  }
+}
