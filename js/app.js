@@ -117,6 +117,39 @@ function init() {
   });
 }
 
+var usd = -1;
+var eur = -1;
+
+function getCurrencyRates() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', "https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22USDRUB,EURRUB%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=", false)
+  xhr.send();
+  if (xhr.status != 200) {
+    // обработать ошибку
+    console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+  } else {
+    // вывести результат
+    var response = JSON.parse(xhr.responseText);
+    var rates = response.query.results.rate; 
+    rates.forEach(function(val) {
+      if (val.id == "USDRUB") usd = Number(val.Rate).toFixed(2);
+      if (val.id == "EURRUB") eur = Number(val.Rate).toFixed(2);
+    });
+    if (usd >= 0 && eur >= 0) {
+      var text = document.createTextNode("USD: " + usd + "   EUR: " + eur);
+      var h2 = document.createElement("DIV");
+      h2.appendChild(text);
+      h2.setAttribute("class", "right");
+      var elem = document.getElementById("main");
+      elem.insertBefore(h2, elem.firstChild);
+    }
+  }
+  console.log(usd);
+  console.log(eur);
+}
+
+// getCurrencyRates();
+
 function showMagic()
 {
   if (document.getElementById("switcher").checked) 
@@ -128,7 +161,7 @@ function showMagic()
     else {
       document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'block';    
     }
-    document.getElementById('particles-js').style.backgroundColor = "#32a6d7"; 
+    document.getElementById('particles-js').style.backgroundColor = "#32a6d7";  
   } else if (initiated) {
     document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
     document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
