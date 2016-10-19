@@ -2,8 +2,10 @@
 // particlesJS.load('particles', 'assets/particles.json', function() {
 //   console.log('callback - particles.js config loaded');
 // });
+var initiated = false;
 
-particlesJS("particles-js", {
+function init() {
+  particlesJS("particles-js", {
     "particles": {
         "number": {
             "value": 10,
@@ -112,23 +114,22 @@ particlesJS("particles-js", {
         }
     },
     "retina_detect": true
-});
-
-// if hide without timeout - image doesn't have time to draw
-setTimeout(function(){
-  document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
-  document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
-},
-1000);
-// #32a6d7;
+  });
+}
 
 function showMagic()
 {
   if (document.getElementById("switcher").checked) 
   {
-    document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'block'; 
+    if (!initiated) {
+      init();
+      initiated = true;
+    }
+    else {
+      document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'block';    
+    }
     document.getElementById('particles-js').style.backgroundColor = "#32a6d7"; 
-  } else {
+  } else if (initiated) {
     document.getElementsByClassName('particles-js-canvas-el')[0].style.display = 'none'; 
     document.getElementById('particles-js').style.backgroundColor = "#ffffff"; 
   }
