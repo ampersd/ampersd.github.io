@@ -30,8 +30,10 @@ body {
 	height:231px;
 	width:432px;
 	float:right;
+	position: relative;
 	margin-top:162px;
 	margin-right:85px;
+	z-index: 1;
 }
 h1 {
 	font-family: AaarghNormal;
@@ -70,3 +72,44 @@ h2 {
 .twitter-follow-button{
     margin-bottom:40px;
 }
+
+/*#particles {
+    color: #fff;
+    background: #2c3e50;
+    background: -webkit-linear-gradient(-15deg,#2c3e50 10%,#40aa94 70%);
+    background: linear-gradient(165deg,#2c3e50 10%,#40aa94 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-dark-blue',endColorstr='@color-brand',GradientType=1)
+}*/
+
+/*#particles {
+    width: 100%;
+    height: 534px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    /*font: normal 75% Arial, Helvetica, sans-serif;*/
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #32a6d7;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
